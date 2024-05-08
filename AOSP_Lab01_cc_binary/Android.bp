@@ -1,0 +1,4 @@
+cc_binary {
+    name: "ines",
+    srcs: ["hi.cpp"],
+}
