@@ -21,6 +21,7 @@
 Add binary and lib to `aosp_cf.mk`:
 
 ```makefile
+PRODUCT_PACKAGES += \
     ines_lib \
     ines_bin \
     
