@@ -1,0 +1,13 @@
+cc_library_shared{
+	name:"ines_lib",
+	srcs:["mylib.cpp"],
+	}
+	
+cc_binary {
+    name: "ines_bin",
+    srcs: ["main.cpp"],
+    shared_libs: [
+    	"ines_lib",
+    	],
+
+}
