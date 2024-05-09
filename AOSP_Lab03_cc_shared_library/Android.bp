@@ -1,5 +1,0 @@
-cc_prebuilt_library_shared {
-	name:"pre_lib",
-	srcs: ["libtest.so"],
-	check_elf_files: false
-	}
