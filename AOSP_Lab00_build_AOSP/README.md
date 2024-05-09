@@ -1,15 +1,15 @@
 # AOSP Build 
 
-##Recommended Platform Version
+## Recommended Platform Version
 - We recommend using `Platform Version 14` for building AOSP. This version provides stability and compatibility with the latest features and enhancements.
 
-##Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
-###* VM Launching Problems
+### * VM Launching Problems
 
-###* Black Screen Issues
+### * Black Screen Issues
 
-##System Requirements
+## System Requirements
 
 To ensure smooth building and running of AOSP, we recommend the following system specifications:
 
@@ -21,7 +21,7 @@ To ensure smooth building and running of AOSP, we recommend the following system
 
 --Operating System: Ubuntu 20.04 LTS is the preferred operating system for building AOSP, though other Linux distributions may also work.
  
-##Getting Started
+## Getting Started
 
 ```bash
 	cd aosp_gsi
