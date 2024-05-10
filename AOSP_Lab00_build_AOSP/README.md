@@ -23,8 +23,7 @@ To ensure smooth building and running of AOSP, we recommend the following system
 ## Getting Started
 ### 1. Run repo init 
 
-- To get the latest version of Repo with its recent bug fixes .
-- You must specify a URL for the manifest , which specifies where the various repositories included in the Android source are placed within your working directory 
+- To get the latest version of Repo with its recent bug fixes . You must specify a URL for the manifest , which specifies where the various repositories included in the Android source are placed within your working directory 
 ```bash
 ./home/trainee/.bin/repo init -u https://android.googlesource.com/platform/manifest -b android14-gsi
 
