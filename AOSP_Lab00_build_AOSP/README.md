@@ -61,25 +61,28 @@ $ echo "$TARGET_PRODUCT-$TARGET_BUILD_VARIANT"
 	make 
 ```
 ### Issues :  
-If you are exposed to this error : build/make/core/artifact_path_requirements.mk:30:error:Build failed
+- If you are exposed to this error : build/make/core/artifact_path_requirements.mk:30:error:Build failed RUN:
 
 ```bash
 export DISABLE_ARTIFACT_PATH_REQUIREMENTS="true"
 ```
+Or
+Just edit `build/envsetup.sh` and add `export DISABLE_ARTIFACT_PATH_REQUIREMENTS="true"`
 
-If Terminal closes itself when building it can be because of high memory usage comes with `"systemd-oomd"` enabled 
 
-Here is how you can disable it : 
+- If Terminal closes itself when building it can be because of high memory usage comes with `"systemd-oomd"` enabled 
+
+- Here is how you can disable it : 
 
 ```bash
 disable --now systemd-oomd
 ```
-To verify that the service is disabled run this:
+- To verify that the service is disabled run this:
 
 ```bash
 systemctl is-enabled systemd-oomd
 ```
-The output should be:
+- The output should be:
 
 ```bash
 disabled
