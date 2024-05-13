@@ -1,0 +1,5 @@
+cc_binary{
+	name:"my_binary_host_2",
+	srcs: ["main.cpp"],
+	host_supported: true
+	}

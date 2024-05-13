@@ -1,0 +1,13 @@
+genrule {
+			name: "ines_genrule",
+			cmd: "echo '#include <iostream>\nint main() {std::cout << \"hi i am the general rule\" << std::endl; return 0; }' > $(out)",
+			out: ["main.cpp"],
+		}
+		
+cc_binary{
+
+	name:"gen_bin",
+	srcs: [":ines_genrule"],
+}
+		
+

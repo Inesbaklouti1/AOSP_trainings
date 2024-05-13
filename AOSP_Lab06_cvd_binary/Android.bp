@@ -1,0 +1,4 @@
+cc_binary_host{
+	name:"cvd_by_ines",
+	srcs: ["main.cpp"]
+	}
