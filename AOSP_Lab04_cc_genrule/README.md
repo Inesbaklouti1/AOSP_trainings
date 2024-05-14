@@ -23,27 +23,37 @@ cc_binary{
 }
 ```
 - This creates a C++ binary named "gen_bin" that depends on the output of the "ines_genrule" rule.
-## 3.Build
+
+## 3.Add the binary and genrule in the `aosp_cf.mk` 
+
+- Add `ines_genrule` & `gen_bin`  in aosp14_gsi/device/google/cuttlefish/vsoc_x86_64/phone/aosp_cf.mk
+
+```bash
+PRODUCT_PACKAGES += \
+    ines_genrule \
+    gen_bin 
+```
+## 4.Build
 
 ```bash
 	make
 ```
 - This command builds the specified targets, including the gen_bin.
 
-## 4.Launch the CVD 
+## 5.Launch the CVD 
 
 ```bash
 	cvd start
 ```
 - This command starts the Android Emulator using the Cuttlefish Virtual Device (CVD).
-## 5.Open the ADB Shell 
+## 6.Open the ADB Shell 
 
 ```bash
 	adb shell
 ```
 - This command opens an ADB shell to interact with the virtual device.
 
-## 6.Run the binary in the Virtual Device (CVD)
+## 7.Run the binary in the Virtual Device (CVD)
 
 ```bash
 vsoc_x86_64:/ $ gen_bin
