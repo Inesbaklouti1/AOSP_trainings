@@ -1,0 +1,4 @@
+cc_library{
+	name:"cc_ines",
+	srcs:["cclib.cpp"],
+	}
