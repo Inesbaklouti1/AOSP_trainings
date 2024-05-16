@@ -1,4 +1,13 @@
 cc_library{
-	name:"cc_ines",
-	srcs:["cclib.cpp"],
+	name:"lib_sum_ines",
+	srcs:["sum.cpp"],
 	}
+	
+cc_binary{
+	name:"sum_bin",
+	srcs:["main.cpp"],
+	static_libs: [
+    	"lib_sum_ines",
+    	],
+	}
+	
