@@ -53,8 +53,7 @@ PRODUCT_HOST_PACKAGES += \
 4. Run the binary with command-line arguments:
 
 ```bash
-    sum_host --help
-    
+    sum_host --help  
 ```
 or 
 
