@@ -56,9 +56,8 @@ PRODUCT_HOST_PACKAGES += \
     sum_host --help
     
 ```
-    or 
-    
-    for example :
+or 
+
 ```bash
     sum_host --operation=sum --val1=1 --val2=2
 ```
