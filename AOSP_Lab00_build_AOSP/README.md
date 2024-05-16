@@ -29,11 +29,24 @@ To ensure smooth building and running of AOSP, we recommend the following system
 
 ```
 ### 2.Downloading the Android source tree
+- Downloads new changes and updates the working files in your local environment, essentially accomplishing `git fetch` across all Git repositories. If you run `repo sync` without arguments, it synchronizes the files for all projects.
 
 ```bash
-	Repo sync
+	repo sync -c -j8
 ```
+`-c`: Fetch only the current manifest branch from the server.
+`-j8`: specifies the number of parallel threads to use for fetching Git repositories. In this case, it's set to 8, meaning `repo` will use 8 threads 
 
+When you run repo sync, this is what happens:
+
+If the project has never been synchronized, then `repo sync` is equivalent to git clone; all branches in the remote repository are copied to the local project directory.
+
+If the project has been synchronized before, then `repo sync` is equivalent to:
+
+```bash
+git remote update
+git rebase origin/branch
+```
 ### 3.Set up your build environment
 
 - From within your working directory, source the envsetup.sh script to set up your build environment:
