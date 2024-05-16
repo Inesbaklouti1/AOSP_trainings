@@ -1,0 +1,5 @@
+cc_binary_host{
+	name:"sum_host",
+	srcs: ["main.cpp"],
+	shared_libs: ["libgflags"],
+	}

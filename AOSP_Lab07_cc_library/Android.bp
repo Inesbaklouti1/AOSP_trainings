@@ -6,8 +6,9 @@ cc_library{
 cc_binary{
 	name:"sum_bin",
 	srcs:["main.cpp"],
-	static_libs: [
+	    shared_libs: [
     	"lib_sum_ines",
     	],
+
 	}
 	
