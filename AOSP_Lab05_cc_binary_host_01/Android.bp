@@ -1,0 +1,4 @@
+cc_binary_host{
+	name:"new_launcher",
+	srcs: ["main.cpp"]
+	}
