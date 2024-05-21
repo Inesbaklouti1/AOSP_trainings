@@ -26,3 +26,8 @@ echo "LAUNCH INSTANCE NUM $ines"
 cmd="launch_cvd --base_instance_num=$ines $@"
 echo "command to run: $cmd"
 eval "$cmd"
+
+on_ctrl_c(){
+	cvd reset
+}
+trap on_ctrl_c SIGINT
