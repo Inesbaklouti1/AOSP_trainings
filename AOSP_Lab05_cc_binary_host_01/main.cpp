@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib>
 int main(){
-	int result = system("./launch.sh");
+	int result = std::system("./launch.sh"); 
 	return 0;
 	}
